@@ -3,10 +3,14 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 from PIL import Image
 import numpy as np
-import os
+import os	
+from huggingface_hub import hf_hub_download
 
-app = Flask(__name__, static_url_path='/static', static_folder='static', template_folder='templates')
-model = load_model("waste_classifier.keras",compile=False)
+
+model_path = hf_hub_download("Adarsh921/ecodetect-resnet50", "waste_classifier.keras")
+model = load_model(model_path)
+
+app = Flask(__name__, template_folder='templates')
 
 # Preprocess function
 def preprocess_image(img_path):

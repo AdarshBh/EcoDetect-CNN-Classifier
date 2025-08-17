@@ -19,7 +19,8 @@ The model is trained on a **Kaggle waste dataset** using **ResNet50** as the con
 - **TensorFlow / Keras**  
 - **ResNet50** (pre-trained on ImageNet)  
 - **NumPy, Pandas, Matplotlib**  
-- **Flask (for deployment)**  
+- **Flask (for deployment)** 
+- **Hugging Face (for model deployment)** 
 
 ---
 

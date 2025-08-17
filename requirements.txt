@@ -5,4 +5,5 @@ matplotlib
 pillow==11.2.1
 scikit-learn
 flask
+huggingface_hub
 gunicorn 
